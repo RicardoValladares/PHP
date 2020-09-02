@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Subir</title>
+<script>
+function uploadFile(){
+	var file = document.getElementById("file1").files[0];
+	var formdata = new FormData();
+	formdata.append("archivo", file);
+	var xmlhttp = new XMLHttpRequest();
+	//progreso
+	xmlhttp.upload.addEventListener("progress", function progressHandler(event){
+		document.getElementById("loaded_n_total").innerHTML = "Uploaded "+event.loaded+" bytes of "+event.total;
+		var percent = (event.loaded / event.total) * 100;
+		document.getElementById("progressBar").value = Math.round(percent);
+		document.getElementById("status").innerHTML = Math.round(percent)+"% uploaded... please wait";
+	}, false);
+	//finalizacion
+	xmlhttp.addEventListener("load", function completeHandler(event){
+		document.getElementById("status").innerHTML = event.target.responseText;
+		document.getElementById("progressBar").value = 0;
+		top.b.document.location.href='archivos.php';
+	}, false);
+	//error al subir
+	xmlhttp.addEventListener("error", function errorHandler(event){
+		document.getElementById("status").innerHTML = "Upload Failed";
+	}, false);
+	//aborto abruptamente
+	xmlhttp.addEventListener("abort", function abortHandler(event){
+		document.getElementById("status").innerHTML = "Upload Aborted";
+	}, false);
+	//elegimos metodo y url
+	xmlhttp.open("POST", "subidor.php");
+	//enviamos
+	xmlhttp.send(formdata);
+}
+</script>
+</head>
+<body bgcolor="black" text="#80FF00">
+<h2>Subir archivo</h2>
+<form id="upload_form" enctype="multipart/form-data" method="post">
+	<input type="file" name="archivo" id="file1" accept="image/*" ><br>
+	<input type="button" value="Upload File" onclick="uploadFile()">
+	<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+	<h3 id="status"></h3>
+	<p id="loaded_n_total"></p>
+</form>
+</body>
+</html>

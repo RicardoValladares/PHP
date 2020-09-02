@@ -1,0 +1,123 @@
+/********************************************************************/
+/*																	*/
+/*				Creado por: R_A_V_R_								*/
+/*																	*/
+/********************************************************************/
+*{
+	margin:0; 
+	padding:0; 
+	border:0; 
+	list-style:none; 
+	text-decoration:none; 
+	outline:none; 
+	font-weight:inherit; 
+	font-style:inherit; 
+	line-height:1; 
+	font-family:inherit; 
+	vertical-align:baseline; 
+}
+body{
+	background-color: #eaf0f7;
+}
+textarea{ 
+	font-family: monospace;
+	border: 1px solid #000000; 
+	outline:0;
+}
+input[type=text]{ 
+	height: 20px;
+	font-family: monospace;
+	border: 1px solid #000000; 
+	outline:0;
+}
+input[type=button]{ 
+	font-weight: bold;
+	font-family: monospace;
+	text-align: center;
+	height: 25px;
+	border: 1px solid #7a8a99; 
+	outline:0;
+	background: #e9f0f7;
+	background: -moz-linear-gradient(top, #e9f0f7 0%, #fdfefe 37%, #bdd3e7 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #e9f0f7), color-stop(37%, #fdfefe), color-stop(100%, #bdd3e7));
+	background: -webkit-linear-gradient(top, #e9f0f7 0%, #fdfefe 37%, #bdd3e7 100%);
+	background: -o-linear-gradient(top, #e9f0f7 0%, #fdfefe 37%, #bdd3e7 100%);
+	background: -ms-linear-gradient(top, #e9f0f7 0%, #fdfefe 37%, #bdd3e7 100%);
+	background: linear-gradient(to bottom, #e9f0f7 0%, #fdfefe 37%, #bdd3e7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f0f7', endColorstr='#bdd3e7', GradientType=0 );
+}
+input[type=button]:hover{
+	border: 2px solid #7a8a99; 
+}
+input[type=button]:active{
+	border: 2px solid #7a8a99; 
+	background: #b8cfe5;	
+}
+input[type=radio]{
+	border: 1px solid #7a8a99;
+	height:20px;
+	width:20px;
+}
+input[type=checkbox]{
+	border: 1px solid #7a8a99;
+	height:20px;
+	width:20px;
+}
+select{
+	height: 20px;
+	font-family: monospace;
+	border: 1px solid #000000; 
+	outline:0;
+	background: #ffffff;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+hr{
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-top: 1px solid #000;
+}
+table{
+	background-color:#fff;
+	border-collapse:collapse;
+}
+table th{
+	background-color:#eee;
+	color:#000;
+}
+table td, table th{
+	padding:5px;
+	border:1px solid #7a8a99;
+}
+#centrar{
+	background-color: #eeeeee;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	border-style: solid; 
+	border-width: 5px 5px 5px 4px; 
+	-moz-border-image: url(marco.png) 5 5 5 4 repeat; 
+	-webkit-border-image: url(marco.png) 5 5 5 4 repeat; 
+	-o-border-image: url(marco.png) 5 5 5 4 repeat; 
+	border-image: url(marco.png) 5 5 5 4 fill repeat;
+}
+#mitad{
+	float:left;
+	height:620px;
+	width:49%;	
+	background-color: #eeeeee;
+	border-style: solid; 
+	border-width: 5px 5px 5px 4px; 
+	-moz-border-image: url(marco.png) 5 5 5 4 repeat; 
+	-webkit-border-image: url(marco.png) 5 5 5 4 repeat; 
+	-o-border-image: url(marco.png) 5 5 5 4 repeat; 
+	border-image: url(marco.png) 5 5 5 4 fill repeat;
+}

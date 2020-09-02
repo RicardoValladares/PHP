@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="estilos.css" />
+        <script type="text/javascript" src="cliente.js" /></script>
+    </head>
+<body onload="AJAX('?texto=')">
+
+<div id="centrar">
+	<input type="file" style="display:none;" id="file" accept="text/plain" />
+	<center><br><br><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick="document.getElementById('file').click();" value="Subir"><input type="button" onclick="abrir()" value="Abrir"><input type="button" onclick="guardar()" value="Guardar"><input type="button" onclick="descargar()" value="Descargar">&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="texto" rows="30" cols="50"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>
+	</center>
+</div>
+
+</body>
+</html>
+
