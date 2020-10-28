@@ -1,4 +1,1 @@
-# AJAX
-Proyecto hecho en PHP
-
-https://ravr.webcindario.com/
+https://ravr.webcindario.com/4_subir_descarga_eliminar/
