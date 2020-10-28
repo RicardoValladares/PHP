@@ -1,4 +1,1 @@
-# AJAX
-Proyecto hecho en PHP
-
-https://ravr.webcindario.com/
+https://ravr.webcindario.com/2_formulario/
