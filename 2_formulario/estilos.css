@@ -22,6 +22,8 @@
 		background-color: #eaf0f7;
 	}
 	textarea{ 
+		width: 80%;
+		height: 400px;
 		font-family: monospace;
 		border: 1px solid #000000; 
 		outline:0;
@@ -141,6 +143,8 @@
 		background-color: #eaf0f7;
 	}
 	textarea{ 
+		width: 80%;
+		height: 400px;
 		font-family: monospace;
 		border: 1px solid #000000; 
 		outline:0;
