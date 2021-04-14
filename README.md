@@ -1,5 +1,5 @@
 # AJAX
-Proyecto hecho en PHP y Responsividad con CSS
+Proyecto hecho en PHP, JavaScript y Responsividad con CSS
 
 http://ravr.webcindario.com/
 
