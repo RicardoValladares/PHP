@@ -1,6 +1,3 @@
-# AJAX
-Proyecto hecho en PHP 5, JavaScript y Responsividad con CSS
-
 http://ravr.webcindario.com/
 
 ![Captura de Pantalla](https://raw.githubusercontent.com/RicardoValladares/AJAX/master/online.png)
