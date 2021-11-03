@@ -42,7 +42,7 @@ if(isset($_REQUEST["nombre"])&&isset($_REQUEST["mensaje"])){
 	$mensaje = $_REQUEST["mensaje"];
 	AJAX($nombre, $mensaje);
 }
-/*sin intenta ingresar sin autorizacion*/
+/*si intenta ingresar sin autorizacion*/
 else{
 	echo("Solo Personal Autorizado");
 }
