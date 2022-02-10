@@ -32,6 +32,7 @@ function AJAX($nombre, $mensaje){
 		ejecutar("CALL insertar('".$nombre."','".$mensaje."');");
 	}
 	$chat = consultar("CALL mostrar();",2);
+	header("Content-Type: text/plain");
 	foreach ($chat as $dato){
 		echo($dato[0].": ".$dato[1]."\n\n");
 	}
