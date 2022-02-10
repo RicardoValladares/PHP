@@ -9,11 +9,12 @@ CREATE DATABASE chat;
 USE chat;
 
 CREATE TABLE mensajeria(
-idmensajeria INT NOT NULL AUTO_INCREMENT,
+idmensajeria BIGINT NOT NULL AUTO_INCREMENT,
 usuarios VARCHAR(100) NOT NULL,
 mensajes LONGTEXT NOT NULL,
 PRIMARY KEY(idmensajeria)
 );
+
 
 DELIMITER //
 CREATE PROCEDURE insertar(usuario VARCHAR(100), mensaje LONGTEXT)
