@@ -30,7 +30,7 @@ function consultar($sql,$cols_num){
 function AJAX($nombre, $mensaje){
 	if(($nombre!="")&&($mensaje!="")){
 		
-		ejecutar("CALL insertar('".preg_replace("/\r|\n/", "-n", $nombre)."','".preg_replace("/\r|\n/", "-n", $mensaje)."');");
+		ejecutar("CALL insertar('".$nombre."','".$mensaje."');");
 	}
 	$chat = consultar("CALL mostrar();",2);
 	header("Content-Type: text/plain");
