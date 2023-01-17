@@ -3,7 +3,7 @@
 function conectar(){
 	$servidor = "127.0.0.1";
 	$usuario = "root";
-	$password = "minino";
+	$password = "123456";
 	$database = "chat";
 	$conexion = new mysqli($servidor, $usuario, $password, $database);
 	return $conexion;
